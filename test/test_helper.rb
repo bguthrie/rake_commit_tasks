@@ -1,10 +1,7 @@
 unless defined?(TEST_HELPER_LOADED)
   TEST_HELPER_LOADED = true
-
-  require "rubygems"
-  require "rake"
-  Dir.glob(File.dirname(__FILE__) + "/../lib/tasks/**/*.rake").each { |rakefile| load rakefile }
-
+  
+  require 'rake_commit_task'
   require "test/unit"
   require "mocha"
 
